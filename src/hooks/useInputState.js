@@ -1,19 +1,20 @@
-import { useState } from "react"
+import { useState } from "react";
 
-const useInputState = (defaultValue=null) => {
+const useInputState = (defaultValue = null) => {
     const [value, setValue] = useState(defaultValue);
 
-    const onChange = (e) => {
-        setValue(e.target.value);
-    }
-      
-    // const handleChange = (e) => {
+    // const handleChange = e => {
     //     setValue(e.target.value);
     // }
     // return [value, handleChange];
+
+    const onChange = e => {
+        setValue(e.target.value);
+    }
+
     return {
-        value, 
-        onChange
+        value,
+        onChange 
     }
 }
 

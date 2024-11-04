@@ -31,8 +31,8 @@ const SimpleForm = () => {
                     <h5>Email</h5>
                     <input type="email" name="email" id="" />
                     <br />
-                    <h5>Phone</h5>
-                    <input type="text" name="phone" />
+                    <h5>Password</h5>
+                    <input type="password" name="password" />
                     <br />
                     <h5>Nationality</h5>
                     <input type="text" name="nationality" />
